@@ -163,3 +163,5 @@ cython_debug/
 readme_result.txt
 wa
 log.txt
+recipes.code-workspace
+workdir
