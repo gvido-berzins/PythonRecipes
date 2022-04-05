@@ -14,14 +14,14 @@ Signals:
     SIGKILL (9) - if the process does not respond to SIGTERM, SIGKILL is sent (only sent, not handled)
     SIGINT (2) - keyboard interrupt (ctrl+c)
 Guide:
-    $ python signals.py # Run the server
+    $ python signals.py               # Run the server
     $ kill -15 `pgrep -f signals.py`  # Send TERM signal
     $ kill -2 `pgrep -f signals.py`   # INT signal or do CTRL+C
     $ kill -9 `pgrep -f signals.py`   # KILL signal
 """
-import time
 import sys
-from signal import signal, SIGTERM, SIGINT
+import time
+from signal import SIGINT, SIGTERM, signal
 
 
 def print_l(list_: list):
@@ -51,6 +51,7 @@ def server_loop():
     signal(SIGINT, sigint_handler)
     while True:
         time.sleep(1)
+
 
 if __name__ == "__main__":
     server_loop()

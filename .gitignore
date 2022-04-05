@@ -165,3 +165,5 @@ wa
 log.txt
 recipes.code-workspace
 workdir
+out
+*.zip
