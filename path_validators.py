@@ -98,6 +98,7 @@ def main():
         # ["gend", False],  # Symbolic link to a readable file
         # ["bloot", False],  # Symbolic linkt to filesystem root
         ["/../root", False],
+        [" /../root", False],
     ]
     pc = PathChecker(*VALIDATORS)
     results = []

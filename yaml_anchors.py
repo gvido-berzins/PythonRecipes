@@ -3,8 +3,6 @@ Summary:
     Read a YAML file which includes anchors
 """
 import yaml
-import json
-
 
 if __name__ == "__main__":
     y = """
