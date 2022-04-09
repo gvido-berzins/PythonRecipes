@@ -167,3 +167,4 @@ recipes.code-workspace
 workdir
 out
 *.zip
+.vscode/settings.json
