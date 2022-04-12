@@ -168,3 +168,4 @@ workdir
 out
 *.zip
 outputs/
+.vscode/settings.json

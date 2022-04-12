@@ -1,5 +1,9 @@
+"""
+Summary:
+    Return the path object based on the currently used system
+"""
 import sys
-from pathlib import Path, WindowsPath, PosixPath
+from pathlib import Path, PosixPath, WindowsPath
 
 path = "This/Is/Some OS Path/file.txt"
 
@@ -11,7 +15,6 @@ def main():
         path = PosixPath(path)
     else:
         raise Exception("Something went wrong")
-
 
     print(path)
     print(str(path))
