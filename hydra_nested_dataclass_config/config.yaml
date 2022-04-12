@@ -1,0 +1,15 @@
+server:
+  name: SrvStation
+  host: 10.11.1.10
+  port: 9001
+
+  database:
+    name: MySQL
+    host: 127.0.0.1
+    port: 3306
+    user: jimmy
+    pass: Prometheus123
+
+client:
+  timeout: 10
+  secret_key: wut?
