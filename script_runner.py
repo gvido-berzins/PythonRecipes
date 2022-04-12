@@ -50,44 +50,48 @@ python-dotenv"""
         print("🥳 \u001b[34mDONE!\u001b[0m 🥳")
 
 
-metric_dir = MODULE_DIR / "some_metric"
-metric_script = "process.py"
-metric_script_path = metric_dir / metric_script
+def run():
+    metric_dir = MODULE_DIR / "some_metric"
+    metric_script = "process.py"
+    metric_script_path = metric_dir / metric_script
 
-# Commands
-metric_command = f"python {metric_script} path/to/file/video.mkv"
-command_list = [
-    "pwd",  # Check current path
-    "ls -la",  # Check current directory
-    "python -m venv venv",  # Create virtual environment
-    "source venv/bin/activate",  # Activate environment
-    "python -m pip install -r requirements.txt",
-    "pip list",  # Check installed packages
-    "which python",  # Check current interpreter location
-    metric_command,
-]
-print()
-print("Command execution order:")
-for i, l in enumerate(command_list, start=1):
-    print(f"{i}. '{l}'")
-
-# To run multiple commands in the terminal, separate them with semicolon
-full_command_string = ";".join(command_list)
-
-
-# The PoC starts here
-with ScriptSetupEnv(metric_dir, metric_script_path):
+    # Commands
+    metric_command = f"python {metric_script} path/to/file/video.mkv"
+    command_list = [
+        "pwd",  # Check current path
+        "ls -la",  # Check current directory
+        "python -m venv venv",  # Create virtual environment
+        "source venv/bin/activate",  # Activate environment
+        "python -m pip install -r requirements.txt",
+        "pip list",  # Check installed packages
+        "which python",  # Check current interpreter location
+        metric_command,
+    ]
     print()
-    print("🪄 \u001b[32mStarting Metric Script!\u001b[0m 🪄")
-    # shell - create a terminal session
-    # cwd - change working directory
-    # stderr - show errors on output
-    process = Popen(full_command_string, shell=True, cwd=metric_dir, stderr=STDOUT)
-    print("-" * 10)
+    print("Command execution order:")
+    for i, l in enumerate(command_list, start=1):
+        print(f"{i}. '{l}'")
 
-    # Wait for process to finish and print output, line by line
-    for line in process.communicate():
-        if line:
-            print(line)
+    # To run multiple commands in the terminal, separate them with semicolon
+    full_command_string = ";".join(command_list)
 
-    print("=" * 10)
+    # The PoC starts here
+    with ScriptSetupEnv(metric_dir, metric_script_path):
+        print()
+        print("🪄 \u001b[32mStarting Metric Script!\u001b[0m 🪄")
+        # shell - create a terminal session
+        # cwd - change working directory
+        # stderr - show errors on output
+        process = Popen(full_command_string, shell=True, cwd=metric_dir, stderr=STDOUT)
+        print("-" * 10)
+
+        # Wait for process to finish and print output, line by line
+        for line in process.communicate():
+            if line:
+                print(line)
+
+        print("=" * 10)
+
+
+if __name__ == "__main__":
+    run()

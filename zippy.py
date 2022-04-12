@@ -1,7 +1,7 @@
 """
 Summary:
     Testing Python zip and unzip functionality
-References:
+References: |
     - [Python docs](https://docs.python.org/3/library/zipfile.html)
 """
 import zipfile

@@ -1,7 +1,7 @@
 """
 Summary:
     Remove all comments and docstrings from a Python file
-Description:
+Description: |
     Thanks to StackOverflow user SurpriseDog, https://stackoverflow.com/a/56285204
     for the strip function
 Disclaimer:

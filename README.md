@@ -34,6 +34,16 @@ pathlib Path object operations
 
 Showing the same operations that can be done with os module, instead using pathlib module
 
+### `network-ping-ipaddress.py`
+
+#### Summary
+
+A quick script using ipaddress module to ping all hosts in a network
+
+#### Description
+
+Uses multiprocessing to ping address more quickly by proving multiple networks. Change WORKER_COUNT for speed.
+
 ### `regex_sorting.py`
 
 #### Summary
@@ -56,6 +66,28 @@ Global variables
 
 Testing how global variables work within different scopes.
 
+### `urllib-parsing-for-client-auth.py`
+
+#### Summary
+
+Parsing given paths into pieces and choosing the correct client
+
+### `script_runner.py`
+
+#### Summary
+
+PoC Script runner Script with virtualenvironment setup
+
+#### Description
+
+Overcomplicated script with setting up the dummy data processing script and deleting it using a context manager. PoC part is on the command_list and Popen line.
+
+### `system-paths.py`
+
+#### Summary
+
+Return the path object based on the currently used system
+
 ### `merge_dict.py`
 
 #### Summary
@@ -68,6 +100,35 @@ Merge a dictionary in a different function to update the dictionary
 
 Filter a list of dates based on the date range
 
+### `signals.py`
+
+#### Summary
+
+Handling process interrupt/termination signals
+
+#### Description
+
+Testing how to handle evens when the system or process is suddenly asked to shut down, useful for data processing when the task is half finished and state needs to be stored/restored.
+
+#### References
+
+- [signal module docs](https://docs.python.org/3/library/signal.html)
+- [Example code of handler and exceptions](https://docs.python.org/3/library/signal.html)
+- [UNIX signals](https://www.tutorialspoint.com/unix/unix-signals-traps.htm)
+
+
+### `remove-comments-docstrings.py`
+
+#### Summary
+
+Remove all comments and docstrings from a Python file
+
+#### Description
+
+Thanks to StackOverflow user SurpriseDog, https://stackoverflow.com/a/56285204
+for the strip function
+
+
 ### `recursive_dict_lookup.py`
 
 #### Summary
@@ -77,6 +138,17 @@ Recurse into a dictionary to safely get a value.
 #### Description
 
 From a given dictionary (or JSON), return a nested value using the varargs in the function parameters, otherwise return the default value.
+
+### `zippy.py`
+
+#### Summary
+
+Testing Python zip and unzip functionality
+
+#### References
+
+- [Python docs](https://docs.python.org/3/library/zipfile.html)
+
 
 ### `import_docs.py`
 
@@ -94,11 +166,31 @@ Simple script to get all docs from all modules
 
 Generate a list of dates between a certain range
 
+### `path_validators.py`
+
+#### Summary
+
+Learning about sanitizing paths and bypassing it
+
+#### Description
+
+Small experiment to test out bypassing path sanitization methods, includes a few validator functions for a single given path
+
 ### `yaml_anchors.py`
 
 #### Summary
 
 Read a YAML file which includes anchors
+
+### `linked_list.py`
+
+#### Summary
+
+Simple Python implementation of a linked list
+
+#### Description
+
+Learned from https://realpython.com/linked-lists-python/ check them out
 
 ### `find_all_ips_regex.py`
 
@@ -147,6 +239,24 @@ Testing the lambda function in filter and sorting
 #### Summary
 
 Print a function signature for give callable
+
+### `client-pattern-match.py`
+
+#### Summary
+
+Getting a client based on a match pattern and protocol
+
+### `exception-disect.py`
+
+#### Summary
+
+Getting only the exception from a traceback
+
+### `auth-pattern-match.py`
+
+#### Summary
+
+Choosing authentication methods based on a pattern
 
 ### `record-screen.py`
 
