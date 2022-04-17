@@ -1,5 +1,12 @@
-APScheduler==3.8.1
-Flask==2.0.2
-gspread==5.1.1
+apscheduler==3.9.1
+astunparse==1.6.3
+Flask==2.1.1
+gspread==5.3.2
+hydra-core==1.1.2
+omegaconf==2.1.2
+paramiko==2.10.3
+psutil==5.9.0
+pypsexec==0.3.0
+python-dotenv==0.20.0
 PyYAML==6.0
-requests==2.26.0
+requests==2.27.1
