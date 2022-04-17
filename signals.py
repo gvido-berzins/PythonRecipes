@@ -5,15 +5,15 @@ Description:
     Testing how to handle evens when the system or process is suddenly
     asked to shut down, useful for data processing when the task is half
     finished and state needs to be stored/restored.
-References:
+References: |
     - [signal module docs](https://docs.python.org/3/library/signal.html)
     - [Example code of handler and exceptions](https://docs.python.org/3/library/signal.html)
     - [UNIX signals](https://www.tutorialspoint.com/unix/unix-signals-traps.htm)
-Signals:
+Signals: |
     SIGTERM (15) - send on system shutdown
     SIGKILL (9) - if the process does not respond to SIGTERM, SIGKILL is sent (only sent, not handled)
     SIGINT (2) - keyboard interrupt (ctrl+c)
-Guide:
+Guide: |
     $ python signals.py               # Run the server
     $ kill -15 `pgrep -f signals.py`  # Send TERM signal
     $ kill -2 `pgrep -f signals.py`   # INT signal or do CTRL+C
