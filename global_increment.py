@@ -1,22 +1,30 @@
+"""
+Summary:
+    Example of a global variable with increment function
+"""
+
+
 def inc():
-    global variable
-    variable += 1
+    global counter
+    try:
+        counter += 1
+    except NameError:
+        counter = 1
+    return counter
 
 
-def init():
-    global variable
-    variable = 0
+def main():
+    # First initialize the variable
+    # Access the variable
+    # Increment the global variable
+    inc()
+    inc()
+    inc()
+    inc()
+    inc()
+    global counter
+    print(counter)
 
 
-# First initialize the variable
-init()
-
-# Access the variable
-global variable
-print(variable)
-
-# Increment the global variable
-inc()
-inc()
-inc()
-print(variable)
+if __name__ == "__main__":
+    main()
