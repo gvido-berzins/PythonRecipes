@@ -1,0 +1,12 @@
+env: stage
+server:
+  host: 10.10.10.111
+  port: 9001
+
+endpoints:
+  get:
+    - "/users/"
+    - "/users/<id>"
+  post:
+    - "/users/"
+    - "/users/<id>"
