@@ -1,0 +1,6 @@
+---
+default:
+  type: best
+  server:
+    host: 10.10.10.110
+    port: 9001

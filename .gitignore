@@ -169,4 +169,5 @@ out
 *.zip
 outputs/
 .vscode/settings.json
+flexible_configuration/server.config.yaml
 *.html

@@ -1,0 +1,14 @@
+env: test
+server:
+  host: 10.10.10.2
+  port: 5555
+
+endpoints:
+  get:
+    - "/users/"
+    - "/users/<id>"
+  post:
+    - "/users/"
+    - "/users/<id>"
+  delete:
+    - "/admin/users/<id>"
