@@ -19,6 +19,7 @@ test_data = [
     "Some unsupported file.txt",
 ]
 
+
 def tprint(*args, **kwargs):
     print(args, kwargs, "<br>")
 

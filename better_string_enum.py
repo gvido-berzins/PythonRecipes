@@ -1,5 +1,5 @@
 """
-Summary: 
+Summary:
     Pythonic string enum
 Description:
     Enum boilerplate that's been useful for my scripts.
@@ -7,7 +7,7 @@ References:
     - https://www.cosmicpython.com/blog/2020-10-27-i-hate-enums.html
 """
 from enum import Enum, auto
-from typing import List, Any
+from typing import Any, List
 
 
 class BetterStrEnum(str, Enum):

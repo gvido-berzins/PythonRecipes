@@ -2,8 +2,8 @@
 Summary:
     Check if all required environment variables are given
 """
-import sys
 import os
+import sys
 
 from dotenv import load_dotenv
 

@@ -1,6 +1,6 @@
-from multiprocessing import Process, freeze_support, Queue
-import time
 import logging
+import time
+from multiprocessing import Process, Queue, freeze_support
 
 root_logger = logging.getLogger(__name__)
 processing_logger = logging.getLogger("processing")

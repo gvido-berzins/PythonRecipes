@@ -4,9 +4,9 @@ Summary:
 Description:
     Simple script to get all docs from all modules
 """
-import yaml
 from pathlib import Path
 
+import yaml
 
 if __name__ == "__main__":
     files = list(Path(".").glob("*.py"))

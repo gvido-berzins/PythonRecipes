@@ -2,8 +2,8 @@
 Summary:
     Get all IP addresses from a string using regex.
 """
-from pprint import pprint
 import re
+from pprint import pprint
 
 
 def main():

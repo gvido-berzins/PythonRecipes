@@ -1,4 +1,4 @@
-from multiprocessing import Process, freeze_support, Queue
+from multiprocessing import Process, Queue, freeze_support
 
 
 class JobExecutor:

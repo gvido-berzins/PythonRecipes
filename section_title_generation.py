@@ -1,7 +1,7 @@
 """
-Summary: 
+Summary:
     Section title generator algorithm
-Description: 
+Description:
     From a list of scenarios and given section keys, generate an ordered list of
     titles where before each section key a new title is created.
 """

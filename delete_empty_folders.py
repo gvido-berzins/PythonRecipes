@@ -1,10 +1,11 @@
-""" 
-Summary: 
+"""
+Summary:
     Delete empty folders recursively, including empty parent directories
 Description:
     Found in this helpful stackoverflow answer https://stackoverflow.com/a/65624165
 """
 import os
+
 
 def delete_empty_folders(root):
     """Delete empty folders and empty folder structures recursively"""

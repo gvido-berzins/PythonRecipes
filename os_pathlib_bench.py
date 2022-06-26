@@ -5,10 +5,9 @@ Description:
     Simple test of concatinating and creating a directory
 """
 import os
-from pathlib import Path
-import time
 import shutil
-
+import time
+from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
 WORK_DIR = SCRIPT_DIR / "workdir"

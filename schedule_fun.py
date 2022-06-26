@@ -10,14 +10,14 @@ Credits:
     - https://stackoverflow.com/questions/21214270/how-to-schedule-a-function-to-run-every-hour-on-flask
 """
 
-from apscheduler.schedulers.background import BackgroundScheduler
-from flask import Flask, request, abort, jsonify
+import json
+import logging
+import time
 from pathlib import Path
 
-import logging
 import requests
-import time
-import json
+from apscheduler.schedulers.background import BackgroundScheduler
+from flask import Flask, abort, jsonify, request
 
 logfile = "log.txt"
 logger = logging.getLogger()

@@ -1,16 +1,15 @@
 """
-Summary: 
+Summary:
     Run multiple worker processes and return status code
 Description:
     A simple way to check what status code a main function returned
     when run with multiprocessing
 """
-import os
-import time
 import multiprocessing as mp
-from typing import List, Tuple
+import os
 import random
-
+import time
+from typing import List, Tuple
 
 ProcessStatus = Tuple[int, int, int]
 

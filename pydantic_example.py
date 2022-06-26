@@ -2,13 +2,11 @@
 Summray:
     Simple example of using pydantic
 """
-# from dataclasses import dataclass
-from pydantic import BaseModel
-from pydantic import (
-    StrictInt, StrictFloat, PositiveInt, Field
-)
-from typing_extensions import Annotated
 from typing import Union
+
+# from dataclasses import dataclass
+from pydantic import BaseModel, Field, PositiveInt, StrictFloat, StrictInt
+from typing_extensions import Annotated
 
 
 class TestData(BaseModel):

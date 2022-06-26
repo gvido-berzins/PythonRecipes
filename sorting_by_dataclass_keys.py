@@ -5,8 +5,8 @@ Description: Sort dataclasses with any given sorting order
 import functools
 import itertools
 import operator
-from typing import Any, Callable, Iterable, List, Tuple
 from dataclasses import dataclass, field
+from typing import Any, Callable, Iterable, List, Tuple
 
 DEFAULT_SORT_ORDER = ["type", "app", "platform", "condition"]
 

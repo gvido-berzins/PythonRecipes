@@ -1,6 +1,6 @@
 import sys
-from multiprocessing import Process
 from argparse import ArgumentParser
+from multiprocessing import Process
 from pathlib import Path
 from typing import List, Tuple
 
