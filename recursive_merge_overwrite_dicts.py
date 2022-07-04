@@ -20,7 +20,6 @@ def _merge_dicts_recursive(src: dict, dst: dict, final: dict) -> dict:
         # if the key doesn't exist in `src`, add the `dst` element to `src`
         if key not in src:
             final[key] = dst[key]
-
         else:
             # if the key value is a dict, both in `src` and in `dst`, merge the dicts
             if isinstance(src[key], dict) and isinstance(dst[key], dict):
