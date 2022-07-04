@@ -1,0 +1,5 @@
+---
+main:
+  database:
+    url: mongodb://from_settings
+    name: test
